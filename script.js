@@ -59,5 +59,6 @@ btClose.addEventListener('click', function(){
 
 //botão comprar
 function comprar(){
-    location.href = "https://go.hotmart.com/F57786036J?ap=74d0";
+    window.open("https://go.hotmart.com/F57786036J?ap=74d0", "_blank")
+    // location.href = "https://go.hotmart.com/F57786036J?ap=74d0", "_blank";
 }
