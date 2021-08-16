@@ -35,19 +35,6 @@ a:active {
     color: var(--color-voodoo);
 }
 
-.logo-wrapper {
-    width: 18%;
-    transition: all .3s;
-    cursor: pointer;
-}
-
-.logo-wrapper:hover {
-    transform: scale(1.1);
-}
-
-.logo-wrapper img {
-    width: 100%;
-}
 
 header {
     width: 100%;
@@ -64,6 +51,20 @@ header {
     transition: all .5s;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.logo-wrapper {
+    width: 18%;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.logo-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.logo-wrapper img {
+    width: 100%;
 }
 
 .nav-desktop {
@@ -398,7 +399,7 @@ header {
 }
 
 .sessao-galeria h2{
-    padding-top: 2rem;
+    padding-top: 4rem;
     color: white;
 }
 
@@ -457,11 +458,12 @@ header {
     background-color: black;
     position: absolute;
     top: 5rem;
-    right: 1rem;
+    right: 2rem;
     padding: 1rem;
     cursor: pointer;
     border: 1px solid white;
     transition: all ease-out .4s;
+    z-index: 2;
 }
 
 #bt-close:hover{
@@ -527,7 +529,7 @@ header {
 }
 
 .sessao-compra .titulo-h2 {
-    padding-top: 2rem;
+    padding-top: 4rem;
     margin: 0 auto;
 }
 
@@ -634,7 +636,7 @@ button {
 
 .sessao-perguntas h2 {
     color: white;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .sessao-perguntas h3 {
@@ -707,7 +709,7 @@ footer {
 
     .nav-desktop {
         display: block;
-        width: 50%;
+        width: 70%;
         transition: all .3s;
     }
 
@@ -960,10 +962,11 @@ footer {
     .sessao-services .border-bottom {
         width: 49px;
         margin-bottom: 36px;
+        background-color: #fff;
     }
 
     .sessao-services p {
-        color: #B7B3B3;
+        color: white;
         font-size: 18px;
         margin-bottom: 39px;
     }
@@ -1005,9 +1008,8 @@ footer {
 
     .content-services p {
         font-size: 16px;
-        color: #B7B3B3;
+        color: white;
         margin: 0;
-
     }
 
     .list-content{

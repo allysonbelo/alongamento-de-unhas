@@ -48,6 +48,13 @@
 
     <div class="container" id="container">
 
+        <div class="modal">
+            <div class="modal-content">
+                <img src="./img/1.webp" alt="" id="modal-img">
+            </div>
+            <span id="bt-close">&times;</span>
+        </div>
+
         <header>
             <div class="logo-wrapper">
                 <img loading="lazy" src="./img/logo-mobile.png" alt="logo do site">
@@ -59,29 +66,26 @@
                     <li><a href="#container">Início</a></li>
                     <li><a href="#works">Técnicas</a></li>
                     <li><a href="#check">Paola Chaves</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#depoimentos">Testimonials</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#certificado">Certificado</a></li>
+                    <li><a href="#compra">Comprar</a></li>
+                    <li><a href="#perguntas">Perguntas</a></li>
                 </ul>
             </nav>
 
             <aside class="sidebar">
                 <nav>
                     <ul>
-                        <li><a href="#container">Home</a></li>
-                        <li><a href="#works">Works</a></li>
-                        <li><a href="#check">Currency</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#depoimentos">Testimonials</a></li>
+                        <li><a href="#container">Início</a></li>
+                        <li><a href="#works">Técnicas</a></li>
+                        <li><a href="#check">Paola Chaves</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#certificado">Certificado</a></li>
+                        <li><a href="#compra">Comprar</a></li>
+                        <li><a href="#perguntas">Perguntas</a></li>
                     </ul>
                 </nav>
-                <hr>
-                <div>
-                    <div class="footer-column2 icon-sidebar">
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-github"></i>
-                    </div>
-                </div>
+
 
             </aside>
 
@@ -182,14 +186,7 @@
                 </div>
             </section>
 
-            <div class="modal">
-                <div class="modal-content">
-                    <img src="./img/1.webp" alt="" id="modal-img">
-                </div>
-                <span id="bt-close">&times;</span>
-            </div>
-
-            <div class="sessao-galeria">
+            <div class="sessao-galeria" id="galeria">
 
                 <h2 class="titulo-h2">Feitas por Paola</h2>
                 <div class="galeria">
@@ -243,7 +240,7 @@
 
             </div>
 
-            <section class="sessao-check margin-sessao sessao-certificado">
+            <section class="sessao-check margin-sessao sessao-certificado" id="certificado">
                 <div class="wrapper-img" data-anime="left">
                     <img loading="lazy" src="./img/certificado2.webp" alt="">
                 </div>
@@ -252,8 +249,8 @@
                     <h3 class="paragrafo-p">Autêntico e Válido em Todo o Território Nacional (Segundo a Lei nº. 9394/96)
                     </h3>
                     <div class="button-check">
-                        <button>
-                            <a href="">Comprar</a>
+                        <button onclick="comprar()">
+                            Comprar
                         </button>
                     </div>
                 </div>
@@ -300,7 +297,7 @@
                 </div>
             </section>
 
-            <section class="sessao-compra">
+            <section class="sessao-compra" id="compra">
 
                 <div class="content">
                     <h2 class="titulo-h2">Curso Completo</h2>
@@ -333,7 +330,9 @@
                             <h4 data-anime="left">De: R$ 269,90</h4>
                             <h4 data-anime="right">Por: R$ 69,90</h4>
                         </div>
-                        <button data-anime="center">Comprar</button>
+                        <button data-anime="center" onclick="comprar()">
+                            Comprar
+                        </button>
                         <div class="wrapper-img-garantia">
                             <img src="./img/seguranca.png" alt="" class="garantia-img">
                             <img src="./img/garantia.png" alt="" class="garantia-img">
@@ -344,7 +343,7 @@
 
             </section>
 
-            <section class="sessao-perguntas">
+            <section class="sessao-perguntas" id="perguntas">
                 <h2 class="titulo-h2">Dúvidas Frequentes</h2>
 
                 <div class="perguntas">

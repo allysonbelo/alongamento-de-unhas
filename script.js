@@ -56,3 +56,8 @@ for(let i = 0; i < imagens.length; i++){
 btClose.addEventListener('click', function(){
     modal.classList.toggle('modal-active')
 })
+
+//botão comprar
+function comprar(){
+    location.href = "https://go.hotmart.com/F57786036J?ap=74d0";
+}
